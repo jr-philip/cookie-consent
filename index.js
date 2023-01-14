@@ -28,6 +28,8 @@ consentForm.addEventListener("submit", function (e) {
  setTimeout(function(){
     document.getElementById("uploadText").innerText="Making the sale..."
  },1500)
+
+
  setTimeout(function(){
     modalInner.innerHTML = `
     <h2>Thank <span class="modal-display-name">${fullName}</span>,you sucker! </h2>
@@ -35,5 +37,6 @@ consentForm.addEventListener("submit", function (e) {
     <div class="idiot-gif">
         <img src="images/pirate.gif">
     </div>`
- },3000)
+    modalCloseBtn.disabled = false
+  },3000)
 })
