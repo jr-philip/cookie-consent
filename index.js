@@ -5,6 +5,7 @@ const consentForm = document.getElementById("consent-form")
 const modalText = document.getElementById("modal-text")
 const modalInner = document.getElementById("modal-inner")
 const modalBtn = document.getElementById("modal-btn")
+const modalChoiceBtn = document.getElementById("modal-choice-btn")
 
 setTimeout(function () {
     modal.style.display = "inline"
@@ -15,7 +16,7 @@ modalCloseBtn.addEventListener("click", function () {
 })
 
 modalBtn.addEventListener("mouseover",function(){
-    console.log("hover")
+   modalChoiceBtn.classList.toggle('reverse') 
 })
 
 consentForm.addEventListener("submit", function (e) {
