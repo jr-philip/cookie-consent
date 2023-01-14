@@ -4,6 +4,7 @@ const modalCloseBtn = document.getElementById("modal-close-btn")
 const consentForm = document.getElementById("consent-form")
 const modalText = document.getElementById("modal-text")
 const modalInner = document.getElementById("modal-inner")
+const modalBtn = document.getElementById("modal-btn")
 
 setTimeout(function () {
     modal.style.display = "inline"
@@ -11,6 +12,10 @@ setTimeout(function () {
 
 modalCloseBtn.addEventListener("click", function () {
     modal.style.display = "none"
+})
+
+modalBtn.addEventListener("mouseover",function(){
+    console.log("hover")
 })
 
 consentForm.addEventListener("submit", function (e) {
